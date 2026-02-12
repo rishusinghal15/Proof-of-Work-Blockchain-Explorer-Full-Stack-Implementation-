@@ -1,0 +1,65 @@
+.block-card {
+  min-width: 280px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.block-card {
+  min-width: 280px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+/* Line */
+.block-card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 50px;
+  height: 3px;
+  background: #06b6d4;
+  transform: translateY(-50%);
+}
+
+/* Arrow head */
+.block-card:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -55px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #38bdf8;
+  transform: translateY(-50%);
+}
+
+
+.block-card:hover {
+  transform: scale(1.02);
+}
+
+.block-title {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.block-row {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.hash {
+  word-break: break-all;
+  background: #334155;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #ffffff;
+}
